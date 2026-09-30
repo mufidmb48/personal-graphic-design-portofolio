@@ -15,15 +15,15 @@ export const CaseStudy: React.FC<CaseStudyProps> = ({ onSelectProject, featuredP
         {/* Section Header */}
         <div className="max-w-3xl mb-14">
           <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-primary mb-3">
-            <span>Featured Case Study</span>
+            <span>Studi Kasus Unggulan</span>
             <span aria-hidden="true" className="text-outline">·</span>
-            <span>Problem to Solution</span>
+            <span>Dari Masalah Menjadi Solusi</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-on-surface leading-tight">
-            How promotional goals are transformed into high-impact commercial visuals.
+            Bagaimana sasaran promosi diubah menjadi visual komersial berdampak tinggi.
           </h2>
           <p className="text-sm sm:text-base text-secondary mt-3">
-            Commercial graphic design goes far beyond personal taste—it is a methodical process to resolve market communication objectives.
+            Desain grafis komersial melampaui preferensi subjektif—ini adalah proses terencana untuk menyelesaikan target komunikasi dan komersial brand.
           </p>
         </div>
 
@@ -64,25 +64,25 @@ export const CaseStudy: React.FC<CaseStudyProps> = ({ onSelectProject, featuredP
 
               <button
                 onClick={() => onSelectProject(featuredProject)}
-                className="self-start px-5 py-2.5 text-xs font-semibold text-primary bg-surface-container-high hover:bg-surface-container-highest rounded-xl border border-outline-variant/80 transition-colors"
+                className="self-start px-5 py-2.5 text-xs font-semibold text-primary bg-surface-container-high hover:bg-surface-container-highest rounded-xl border border-outline-variant/80 transition-colors cursor-pointer"
               >
-                View Full Project Details & Deliverables →
+                Lihat Rincian Proyek & Berkas Output →
               </button>
             </div>
           </div>
 
-          {/* 4-Step Process Breakdown: Problem → Approach → Design → Outcome */}
+          {/* 4-Step Process Breakdown: Masalah → Pendekatan → Desain → Hasil */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 border-t border-outline-variant/60">
             
             {/* 1. Problem */}
             <div className="p-5 rounded-2xl bg-surface-container-low border border-outline-variant/40">
               <div className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-wider text-error mb-2">
                 <HelpCircle className="w-4 h-4 text-error shrink-0" />
-                <span>01. Problem</span>
+                <span>01. Masalah</span>
               </div>
-              <h4 className="text-sm font-bold text-on-surface mb-2">Attention Challenge</h4>
+              <h4 className="text-sm font-bold text-on-surface mb-2">Tantangan Perhatian</h4>
               <p className="text-xs text-secondary leading-relaxed">
-                The ready-to-drink coffee sector is heavily saturated. The campaign demanded a visual hook that sparks thirst and halts scrolling within fractions of a second.
+                Kategori kopi siap minum sangat kompetitif. Kampanye memerlukan visual yang langsung membangkitkan dahaga dan menghentikan scroll layar dalam sepersekian detik.
               </p>
             </div>
 
@@ -90,11 +90,11 @@ export const CaseStudy: React.FC<CaseStudyProps> = ({ onSelectProject, featuredP
             <div className="p-5 rounded-2xl bg-surface-container-low border border-outline-variant/40">
               <div className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-wider text-primary mb-2">
                 <Lightbulb className="w-4 h-4 text-primary shrink-0" />
-                <span>02. Approach</span>
+                <span>02. Pendekatan</span>
               </div>
-              <h4 className="text-sm font-bold text-on-surface mb-2">Immersive POV Concept</h4>
+              <h4 className="text-sm font-bold text-on-surface mb-2">Konsep POV Imersif</h4>
               <p className="text-xs text-secondary leading-relaxed">
-                Adopted a first-person perspective reaching into a chilled refrigerator, backed by dynamic 3D typography and vibrant warm lighting.
+                Menerapkan perspektif orang pertama (POV) mengambil kaleng dari dalam kulkas dingin, didukung tipografi 3D yang dinamis dan pencahayaan hangat.
               </p>
             </div>
 
@@ -102,11 +102,11 @@ export const CaseStudy: React.FC<CaseStudyProps> = ({ onSelectProject, featuredP
             <div className="p-5 rounded-2xl bg-surface-container-low border border-outline-variant/40">
               <div className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-wider text-tertiary mb-2">
                 <PenTool className="w-4 h-4 text-tertiary shrink-0" />
-                <span>03. Design</span>
+                <span>03. Desain</span>
               </div>
-              <h4 className="text-sm font-bold text-on-surface mb-2">Precision Retouching</h4>
+              <h4 className="text-sm font-bold text-on-surface mb-2">Retouching Presisi</h4>
               <p className="text-xs text-secondary leading-relaxed">
-                Executed intricate ice condensation effects in Photoshop, established bold headline hierarchy, and configured multi-ratio ad formats in Illustrator.
+                Mengeksekusi tetesan embun kondensasi es yang mendetail di Photoshop, menyusun hierarki headline tegas, dan menyiapkan format multi-rasio di Illustrator.
               </p>
             </div>
 
@@ -114,11 +114,11 @@ export const CaseStudy: React.FC<CaseStudyProps> = ({ onSelectProject, featuredP
             <div className="p-5 rounded-2xl bg-surface-container-low border border-outline-variant/40">
               <div className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-wider text-on-surface mb-2">
                 <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                <span>04. Outcome</span>
+                <span>04. Hasil Akhir</span>
               </div>
-              <h4 className="text-sm font-bold text-on-surface mb-2">High-Energy Visual</h4>
+              <h4 className="text-sm font-bold text-on-surface mb-2">Visual Penuh Energi</h4>
               <p className="text-xs text-secondary leading-relaxed">
-                Campaign-ready across digital ad channels and in-store displays, projecting a modern, refreshing, and high-conversion brand presence.
+                Materi siap tayang di kanal iklan digital maupun pajangan toko fisik, memproyeksikan citra brand yang modern, menyegarkan, dan siap konversi.
               </p>
             </div>
 

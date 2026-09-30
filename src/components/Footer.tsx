@@ -8,12 +8,12 @@ export const Footer: React.FC = () => {
   };
 
   const navLinks = [
-    { label: 'About', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Selected Work', href: '#work' },
-    { label: 'Process', href: '#process' },
-    { label: 'Why Me', href: '#why-me' },
-    { label: 'Contact', href: '#contact' }
+    { label: 'Tentang Saya', href: '#about' },
+    { label: 'Layanan', href: '#services' },
+    { label: 'Karya Pilihan', href: '#work' },
+    { label: 'Alur Kerja', href: '#process' },
+    { label: 'Keunggulan', href: '#why-me' },
+    { label: 'Kontak', href: '#contact' }
   ];
 
   return (
@@ -27,21 +27,21 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3 mb-3">
               <MxtLogo size={34} />
               <h3 className="text-xl font-bold tracking-tight text-on-surface">
-                MXT · Mufid Muhammad Baihaqi
+                MXT · Mufid Muhammad Baihaqi, S.Hum.
               </h3>
             </div>
             <p className="text-xs sm:text-sm text-secondary leading-relaxed max-w-sm mb-4">
-              Graphic designer specializing in Posters & Flyers, Social Media Design, Banners, Event Visuals, Promotional Design, and Brand Identity.
+              Desainer grafis dan spesialis media kreatif yang berfokus pada Desain Poster & Brosur, Media Sosial, Banner & Spanduk, Visual Acara, Materi Promosi Komersial, serta Identitas Brand.
             </p>
             <p className="text-xs text-outline">
-              Available for commercial commissions, freelance projects, and creative collaborations worldwide.
+              Terbuka untuk kerja sama proyek komersial, freelance, dan kebutuhan visual kelembagaan.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="md:col-span-4">
             <h4 className="text-xs font-bold uppercase tracking-wider text-on-surface mb-4">
-              Navigation
+              Navigasi Halaman
             </h4>
             <ul className="grid grid-cols-2 gap-2 text-xs text-secondary">
               {navLinks.map((link) => (
@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-3 flex flex-col justify-between h-full">
             <div>
               <h4 className="text-xs font-bold uppercase tracking-wider text-on-surface mb-4">
-                Connect Directly
+                Hubungi Langsung
               </h4>
               <div className="flex flex-col gap-2 text-xs text-secondary">
                 <a
@@ -112,10 +112,10 @@ export const Footer: React.FC = () => {
 
             <button
               onClick={scrollToTop}
-              className="mt-6 self-start inline-flex items-center gap-2 text-xs font-semibold text-primary hover:text-primary/80 transition-colors p-1"
-              aria-label="Back to top"
+              className="mt-6 self-start inline-flex items-center gap-2 text-xs font-semibold text-primary hover:text-primary/80 transition-colors p-1 cursor-pointer"
+              aria-label="Kembali ke atas halaman"
             >
-              <span>Back to Top</span>
+              <span>Kembali ke Atas</span>
               <ArrowUp className="w-3.5 h-3.5" />
             </button>
           </div>
@@ -124,7 +124,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-outline-variant/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-outline">
-          <p>© 2026 MXT · Mufid Muhammad Baihaqi. All rights reserved.</p>
+          <p>© 2026 MXT · Mufid Muhammad Baihaqi, S.Hum. Seluruh hak cipta dilindungi.</p>
           <div className="flex items-center gap-3">
             <span>Material 3 Expressive Design System</span>
           </div>

@@ -29,31 +29,31 @@ export const CtaSection: React.FC<CtaSectionProps> = ({
 
           <div className="relative z-10 max-w-3xl">
             <span className="inline-block text-xs font-semibold tracking-wider uppercase text-primary-fixed mb-4">
-              New Collaborations · Open for Selected Projects
+              Kolaborasi Baru · Terbuka untuk Proyek Pilihan
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] mb-6 text-balance">
-              Have a design project or campaign in mind?
+              Memiliki rencana proyek desain atau kampanye promosi?
             </h2>
 
             <p className="text-base sm:text-lg text-primary-fixed/90 leading-relaxed mb-10 max-w-2xl font-normal">
-              Let's turn your vision into visual communications that people immediately see, understand, and remember.
+              Mari ubah visi produk Anda menjadi komunikasi visual yang memikat pandangan, mudah dipahami, dan melekat di benak pelanggan.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
               <button
                 onClick={onOpenContact}
-                className="px-8 py-4 text-sm font-bold text-on-primary-fixed bg-primary-fixed hover:bg-white active:scale-[0.98] rounded-2xl shadow-md transition-all flex items-center gap-2.5 focus-visible:outline-2 focus-visible:outline-white"
+                className="px-8 py-4 text-sm font-bold text-on-primary-fixed bg-primary-fixed hover:bg-white active:scale-[0.98] rounded-2xl shadow-md transition-all flex items-center gap-2.5 focus-visible:outline-2 focus-visible:outline-white cursor-pointer"
               >
-                <span>Start a Project Now</span>
+                <span>Mulai Proyek Sekarang</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
               <button
                 onClick={onScrollToPortfolio}
-                className="px-7 py-4 text-sm font-semibold text-on-primary bg-primary-container/30 hover:bg-primary-container/50 active:scale-[0.98] rounded-2xl border border-primary-fixed/30 transition-all flex items-center gap-2"
+                className="px-7 py-4 text-sm font-semibold text-on-primary bg-primary-container/30 hover:bg-primary-container/50 active:scale-[0.98] rounded-2xl border border-primary-fixed/30 transition-all flex items-center gap-2 cursor-pointer"
               >
-                <span>Explore Portfolio</span>
+                <span>Jelajahi Portofolio</span>
                 <ArrowDown className="w-4 h-4" />
               </button>
             </div>

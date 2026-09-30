@@ -3,37 +3,37 @@ import { ProcessStep } from '../types';
 export const processSteps: ProcessStep[] = [
   {
     number: '01',
-    title: 'Understand',
-    shortDesc: 'Deep-dive into objectives, target audience, and communication context.',
-    detailedDesc: 'Every project starts with thorough alignment: who the audience is, what primary message must take precedence, and what technical parameters must be met.',
-    deliverable: 'Creative Brief & Goal Alignment'
+    title: 'Memahami (Brief)',
+    shortDesc: 'Pendalaman tujuan komunikasi, target audiens, dan konteks penggunaan.',
+    detailedDesc: 'Setiap proyek diawali dengan penyelarasan menyeluruh: siapa target audiensnya, pesan utama apa yang wajib ditonjolkan, dan spesifikasi teknis apa yang harus dipenuhi.',
+    deliverable: 'Creative Brief & Penyelarasan Sasaran'
   },
   {
     number: '02',
-    title: 'Explore',
-    shortDesc: 'Visual direction research, moodboards, and composition sketches.',
-    detailedDesc: 'Conducting industry benchmark research, curating moodboards, and drafting thumbnail layouts before proceeding to digital production.',
-    deliverable: 'Moodboard & Visual Direction'
+    title: 'Riset & Moodboard',
+    shortDesc: 'Eksplorasi arah visual, referensi industri, dan sketsa komposisi.',
+    detailedDesc: 'Menganalisis tolak ukur industri terkait, menyusun moodboard referensi warna dan gaya, serta membuat sketsa tata letak awal sebelum melangkah ke eksekusi digital.',
+    deliverable: 'Moodboard & Arah Visual Terpilih'
   },
   {
     number: '03',
-    title: 'Design',
-    shortDesc: 'Developing the visual system with strict typographic hierarchy.',
-    detailedDesc: 'Translating the chosen direction into finished vector graphics: font pairings, modular grid structure, balanced color distribution, and negative space.',
-    deliverable: 'Comprehensive Design Draft'
+    title: 'Desain & Eksekusi',
+    shortDesc: 'Pengembangan sistem visual dengan hierarki tipografi yang disiplin.',
+    detailedDesc: 'Menerjemahkan konsep terpilih ke dalam grafis digital berkualitas: pemilihan font, struktur grid modular, proporsi warna seimbang, dan ruang negatif yang bernapas.',
+    deliverable: 'Draf Desain Lengkap & Pratinjau'
   },
   {
     number: '04',
-    title: 'Refine',
-    shortDesc: 'Sharpening micro-details, contrast evaluation, and client feedback.',
-    detailedDesc: 'Reviewing drafts collaboratively, calibrating kerning, testing contrast compliance across displays, and executing agreed refinements.',
-    deliverable: 'Refined & Polished Assets'
+    title: 'Penyempurnaan',
+    shortDesc: 'Uji kontras keterbacaan, penyesuaian detail mikro, dan masukan klien.',
+    detailedDesc: 'Meninjau draf bersama, mengoreksi kerning huruf, menguji kenyamanan baca pada layar ponsel, dan melakukan revisi terarah sesuai kesepakatan.',
+    deliverable: 'Aset Visual Matang & Terkalibrasi'
   },
   {
     number: '05',
-    title: 'Deliver',
-    shortDesc: 'Preparing organized production master files for print and digital use.',
-    detailedDesc: 'Handing over the complete archive with cleanly labeled layers (AI, PSD, Press-Ready PDF with bleed, SVG, and optimized PNGs) along with usage notes.',
-    deliverable: 'Press-Ready & Digital Master Files'
+    title: 'Serah Terima (Final)',
+    shortDesc: 'Penyusunan berkas master produksi rapi untuk cetak maupun digital.',
+    detailedDesc: 'Menyerahkan arsip berkas final dengan penamaan layer terorganisir (AI, PSD, PDF siap cetak dengan margin bleed, SVG, dan PNG transparan) beserta catatan teknis penggunaan.',
+    deliverable: 'Berkas Master Siap Cetak & Digital'
   }
 ];

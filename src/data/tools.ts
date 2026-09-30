@@ -3,26 +3,26 @@ import { DesignTool } from '../types';
 export const designToolsData: DesignTool[] = [
   {
     name: 'Figma',
-    role: 'Digital Layout, UI & Vector Systems',
-    description: 'Utilized for fast grid exploration, building modular social media layout frameworks, and producing clean digital assets for seamless collaboration.',
+    role: 'Tata Letak Digital, UI & Sistem Vektor',
+    description: 'Digunakan untuk eksplorasi grid cepat, penyusunan kerangka desain media sosial modular, dan kolaborasi digital yang mulus.',
     category: 'layout'
   },
   {
     name: 'Photoshop',
-    role: 'Photo Manipulation & Product Mockups',
-    description: 'The industry benchmark for dramatic lighting manipulation, cinematic color grading, product packaging retouching, and commercial advertising graphics.',
+    role: 'Manipulasi Foto & Mockup Produk',
+    description: 'Standar utama industri untuk pencahayaan dramatis, grading warna sinematik, retouching kemasan produk, dan grafis komersial.',
     category: 'raster'
   },
   {
     name: 'Illustrator',
-    role: 'Vector Graphics, Logotypes & Print Layout',
-    description: 'Specialized for precision logo marks, custom typography, infinitely scalable geometric vectors, and press-ready files for commercial print shops.',
+    role: 'Grafis Vektor, Tipografi & Format Cetak',
+    description: 'Dikhususkan untuk pembuatan logo presisi, tipografi kustom, vektor geometris yang dapat diperbesar tanpa batas, dan berkas siap cetak.',
     category: 'vector'
   },
   {
     name: 'Canva',
-    role: 'Client Hand-Off & Flexible Templates',
-    description: 'Empowering clients to update daily text schedules or promotional prices on their own using professionally standardized master templates.',
+    role: 'Template Fleksibel & Serah Terima Klien',
+    description: 'Memudahkan klien memperbarui jadwal teks harian atau harga promosi secara mandiri menggunakan template master yang telah distandardisasi.',
     category: 'collaboration'
   }
 ];

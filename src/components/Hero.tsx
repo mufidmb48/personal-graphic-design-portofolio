@@ -34,38 +34,37 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToPortfolio, onScrollToConta
             {/* Personal Intro Strip with MXT Logo */}
             <div className="flex items-center gap-2.5 text-xs font-semibold tracking-wider uppercase text-primary mb-4">
               <MxtLogo size={24} />
-              <span>Mufid Muhammad Baihaqi (MXT)</span>
+              <span>Mufid Muhammad Baihaqi, S.Hum. (MXT)</span>
               <span aria-hidden="true" className="text-outline">·</span>
-              <span>Graphic Designer</span>
+              <span>Desainer Grafis & Media Kreatif</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-on-surface leading-[1.12] mb-6 text-balance">
-              Transforming communication goals into{' '}
+              Mengubah kebutuhan komunikasi menjadi{' '}
               <span className="text-primary underline decoration-primary-container decoration-4 underline-offset-6">
-                clear, bold & production-ready
-              </span>{' '}
-              visual design.
+                desain visual yang jelas, berani & siap pakai
+              </span>.
             </h1>
 
             <p className="text-lg sm:text-xl text-secondary leading-relaxed max-w-2xl mb-8 font-normal">
-              Crafting high-impact Posters & Flyers, Social Media Design, Banners, Event Visuals, Promotional Design, and Brand Identities that captivate audiences and deliver commercial results.
+              Merancang Poster & Brosur, Desain Media Sosial, Banner & Spanduk, Visual Acara, Materi Promosi Komersial, serta Identitas Brand yang memikat audiens dan menghasilkan dampak nyata.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4 mb-10">
               <button
                 onClick={onScrollToPortfolio}
-                className="px-7 py-3.5 text-sm font-semibold text-on-primary bg-primary hover:bg-primary/95 active:scale-[0.98] rounded-2xl shadow-sm transition-all flex items-center gap-2.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="px-7 py-3.5 text-sm font-semibold text-on-primary bg-primary hover:bg-primary/95 active:scale-[0.98] rounded-2xl shadow-sm transition-all flex items-center gap-2.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
               >
-                <span>View Selected Work</span>
+                <span>Lihat Karya Pilihan</span>
                 <ArrowDown className="w-4 h-4" />
               </button>
 
               <button
                 onClick={onScrollToContact}
-                className="px-7 py-3.5 text-sm font-semibold text-primary bg-surface-container-high hover:bg-surface-container-highest active:scale-[0.98] rounded-2xl border border-outline-variant/60 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="px-7 py-3.5 text-sm font-semibold text-primary bg-surface-container-high hover:bg-surface-container-highest active:scale-[0.98] rounded-2xl border border-outline-variant/60 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
               >
-                Let’s Work Together
+                Mulai Kerja Sama
               </button>
             </div>
 
@@ -73,15 +72,15 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToPortfolio, onScrollToConta
             <div className="pt-6 border-t border-outline-variant/70 flex flex-wrap items-center gap-y-3 gap-x-8 text-xs font-medium text-secondary">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                <span>Workflow in Figma, Photoshop, Illustrator & Canva</span>
+                <span>Alur Kerja di Figma, Photoshop, Illustrator & Canva</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                <span>Press-Ready Files (CMYK/Bleed) & Digital Creatives</span>
+                <span>Standar Siap Cetak (CMYK/Bleed) & Aset Digital</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                <span>Direct Collaboration & Dependable Deadlines</span>
+                <span>Kolaborasi Langsung & Komitmen Tenggat Waktu</span>
               </div>
             </div>
           </motion.div>
@@ -98,7 +97,7 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToPortfolio, onScrollToConta
               <div className="aspect-[4/3] sm:aspect-[16/12] relative overflow-hidden bg-surface-container">
                 <img
                   src="/Nescafe/1.jpg"
-                  alt="Commercial promotional poster for Nescafe Savior The Flavor by Mufid Muhammad Baihaqi"
+                  alt="Poster promosi komersial Nescafe Savior The Flavor oleh Mufid Muhammad Baihaqi"
                   className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-700 ease-out"
                   loading="eager"
                 />
@@ -107,8 +106,8 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToPortfolio, onScrollToConta
                 {/* Floating internal badge */}
                 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-surface/90 backdrop-blur-md border border-outline-variant/60 flex items-center justify-between shadow-sm">
                   <div>
-                    <p className="text-xs font-semibold text-primary">Commercial Showcase</p>
-                    <p className="text-sm font-bold text-on-surface">Nescafe "Savior The Flavor" Poster</p>
+                    <p className="text-xs font-semibold text-primary">Sorotan Komersial</p>
+                    <p className="text-sm font-bold text-on-surface">Poster Nescafe "Savior The Flavor"</p>
                   </div>
                   <span className="text-xs font-mono text-secondary">Photoshop · 2025</span>
                 </div>
@@ -120,14 +119,14 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToPortfolio, onScrollToConta
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="hidden sm:flex absolute -bottom-6 -left-6 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant shadow-md items-center gap-3.5 max-w-[240px]"
+              className="hidden sm:flex absolute -bottom-6 -left-6 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant shadow-md items-center gap-3.5 max-w-[250px]"
             >
               <div className="w-10 h-10 rounded-xl bg-primary-container/40 text-on-primary-container flex items-center justify-center shrink-0">
                 <Palette className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="text-xs font-bold text-on-surface">Visual Hierarchy</p>
-                <p className="text-[11px] text-secondary leading-tight">Design that commands viewer attention effortlessly.</p>
+                <p className="text-xs font-bold text-on-surface">Hierarki Visual</p>
+                <p className="text-[11px] text-secondary leading-tight">Desain yang memandu mata pembaca secara alami dan terstruktur.</p>
               </div>
             </motion.div>
 
@@ -142,8 +141,8 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToPortfolio, onScrollToConta
                 <Layers className="w-4 h-4 text-secondary" />
               </div>
               <div>
-                <p className="text-xs font-bold text-on-surface">Print & Digital</p>
-                <p className="text-[11px] text-secondary">CMYK, Bleed & Ads Ready</p>
+                <p className="text-xs font-bold text-on-surface">Cetak & Digital</p>
+                <p className="text-[11px] text-secondary">Siap CMYK, Bleed & Iklan Medsos</p>
               </div>
             </motion.div>
 

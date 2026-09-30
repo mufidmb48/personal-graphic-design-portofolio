@@ -16,15 +16,15 @@ export const Tools: React.FC = () => {
         
         <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-primary mb-3">
-            <span>Workflow & Toolkit</span>
+            <span>Alur Kerja & Perangkat</span>
             <span aria-hidden="true" className="text-outline">·</span>
-            <span>Tools I Work With</span>
+            <span>Software Produksi</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-on-surface">
-            Software as dedicated instruments of craft, not subjective percentage bars.
+            Perangkat lunak sebagai instrumen eksekusi presisi, bukan persentase keahlian subjektif.
           </h2>
           <p className="text-sm sm:text-base text-secondary mt-3">
-            Each application occupies a precise stage in the production pipeline—from vector precision in Illustrator to client-friendly handover templates in Canva.
+            Setiap aplikasi memiliki posisi tertentu dalam alur kerja produksi—mulai dari eksplorasi tata letak di Figma, retouching detail di Photoshop, keakuratan vektor di Illustrator, hingga kemudahan serah terima mandiri bagi klien di Canva.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export const Tools: React.FC = () => {
               </div>
 
               <div className="mt-4 pt-3 border-t border-outline-variant/40 text-[11px] font-mono text-outline">
-                Workflow Verified
+                Alur Kerja Terverifikasi
               </div>
             </div>
           ))}

@@ -19,12 +19,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
   }, []);
 
   const navLinks = [
-    { label: 'About', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Selected Work', href: '#work' },
-    { label: 'Process', href: '#process' },
-    { label: 'Why Me', href: '#why-me' },
-    { label: 'Contact', href: '#contact' }
+    { label: 'Tentang Saya', href: '#about' },
+    { label: 'Layanan', href: '#services' },
+    { label: 'Karya Pilihan', href: '#work' },
+    { label: 'Alur Kerja', href: '#process' },
+    { label: 'Keunggulan', href: '#why-me' },
+    { label: 'Kontak', href: '#contact' }
   ];
 
   const handleLinkClick = (href: string) => {
@@ -49,7 +49,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
         <a
           href="#"
           className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-primary rounded-xl p-1"
-          aria-label="MXT Home"
+          aria-label="Beranda MXT"
         >
           <MxtLogo size={36} className="group-hover:scale-105 transition-transform" />
           <span className="text-xl sm:text-2xl font-black tracking-wider text-on-surface group-hover:text-primary transition-colors">
@@ -58,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
         </a>
 
         {/* Zone 2: Clean text navigation links */}
-        <nav className="hidden md:flex items-center gap-7 lg:gap-8 text-sm font-medium text-secondary" aria-label="Main Navigation">
+        <nav className="hidden md:flex items-center gap-7 lg:gap-8 text-sm font-medium text-secondary" aria-label="Navigasi Utama">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -78,16 +78,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
         <div className="flex items-center gap-3">
           <button
             onClick={onOpenContact}
-            className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold tracking-wide text-on-primary bg-primary hover:bg-primary/90 active:scale-[0.98] rounded-full transition-all shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold tracking-wide text-on-primary bg-primary hover:bg-primary/90 active:scale-[0.98] rounded-full transition-all shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
-            <span>Start a Project</span>
+            <span>Mulai Diskusi Proyek</span>
             <ArrowUpRight className="w-4 h-4" />
           </button>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2.5 rounded-xl text-on-surface hover:bg-surface-container transition-colors focus-visible:outline-2 focus-visible:outline-primary"
-            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-label={mobileMenuOpen ? 'Tutup menu' : 'Buka menu'}
             aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -98,7 +98,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant px-6 py-6 shadow-xl animate-in slide-in-from-top duration-200">
-          <nav className="flex flex-col gap-3" aria-label="Mobile Navigation">
+          <nav className="flex flex-col gap-3" aria-label="Navigasi Seluler">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -118,9 +118,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                   setMobileMenuOpen(false);
                   onOpenContact();
                 }}
-                className="w-full py-3.5 px-4 text-sm font-semibold text-center text-on-primary bg-primary rounded-xl flex items-center justify-center gap-2 shadow-sm min-h-[48px]"
+                className="w-full py-3.5 px-4 text-sm font-semibold text-center text-on-primary bg-primary rounded-xl flex items-center justify-center gap-2 shadow-sm min-h-[48px] cursor-pointer"
               >
-                <span>Start a Project</span>
+                <span>Mulai Diskusi Proyek</span>
                 <ArrowUpRight className="w-4 h-4" />
               </button>
             </div>

@@ -2,33 +2,33 @@ import { WhyMePoint } from '../types';
 
 export const whyMeData: WhyMePoint[] = [
   {
-    title: 'Design with Purpose',
-    description: 'Every visual element is informed by your communication objectives, never arbitrary decoration that wears thin.',
-    benefit: 'Your core message reaches your audience with zero ambiguity.',
+    title: 'Desain Berorientasi Tujuan',
+    description: 'Setiap elemen visual disusun berdasarkan sasaran komunikasi Anda, bukan sekadar hiasan visual yang kehilangan makna.',
+    benefit: 'Pesan inti brand Anda sampai ke audiens tanpa keraguan atau salah tafsir.',
     iconName: 'Target'
   },
   {
-    title: 'Detail-Oriented Precision',
-    description: 'Rigorous attention to typographic kerning, micro-spacing, consistent grid alignment, and screen-to-print color integrity.',
-    benefit: 'Your brand looks polished, credible, and trustworthy.',
+    title: 'Presisi & Ketelitian Tinggi',
+    description: 'Perhatian cermat terhadap kerning tipografi, jarak margin mikro, keselarasan grid yang konsisten, dan ketepatan warna cetak.',
+    benefit: 'Tampilan brand Anda terlihat profesional, berwibawa, dan dapat dipercaya.',
     iconName: 'Maximize2'
   },
   {
-    title: 'Flexible Workflow',
-    description: 'Proficient across Figma, Adobe Creative Cloud, and Canva. Adapting deliverables seamlessly to your team’s tools.',
-    benefit: 'Frictionless collaboration with zero software lock-in.',
+    title: 'Alur Kerja Fleksibel',
+    description: 'Menguasai Figma, Adobe Creative Cloud (Photoshop, Illustrator, Premiere), dan Canva. Menyesuaikan format berkas dengan alur kerja tim Anda.',
+    benefit: 'Kolaborasi lancar tanpa terkunci pada satu format perangkat lunak.',
     iconName: 'Cpu'
   },
   {
-    title: 'Practical Deliverables',
-    description: 'Files delivered in clearly labeled folder structures with organized layers, print-ready bleed/CMYK specifications, and web-optimized exports.',
-    benefit: 'Ready to send straight to the print shop or upload directly to ad managers.',
+    title: 'Berkas Siap Pakai & Praktis',
+    description: 'Hasil akhir diserahkan dalam struktur folder yang rapi, layer terorganisir, standar warna CMYK/bleed untuk percetakan, dan resolusi tajam untuk layar.',
+    benefit: 'Bisa langsung dikirim ke vendor percetakan atau diunggah ke manajer iklan.',
     iconName: 'CheckCircle2'
   },
   {
-    title: 'Clear Communication',
-    description: 'Structured milestones with realistic timelines. Open feedback loops and proactive status updates at each stage.',
-    benefit: 'Total peace of mind regarding deadlines and final quality.',
+    title: 'Komunikasi Jelas & Tepat Waktu',
+    description: 'Jadwal kerja bertahap dengan estimasi waktu yang realistis. Transparan dalam laporan progres dan terbuka terhadap diskusi.',
+    benefit: 'Ketenangan pikiran atas kepatuhan tenggat waktu (deadline) dan mutu akhir.',
     iconName: 'MessageSquareCheck'
   }
 ];

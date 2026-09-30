@@ -12,11 +12,11 @@ export const TestimonialPlaceholder: React.FC = () => {
           </div>
 
           <h3 className="text-xl sm:text-2xl font-bold text-on-surface mb-2">
-            Client Feedback & Verified Reviews
+            Ulasan Klien & Transparansi Kolaborasi
           </h3>
 
           <p className="text-sm text-secondary max-w-xl mx-auto mb-8">
-            Complete transparency is paramount. This dedicated space displays authentic client reviews and collaboration results upon project completion.
+            Transparansi penuh adalah komitmen utama. Ruang ini didedikasikan untuk menampilkan ulasan otentik dan evaluasi langsung dari para mitra klien setelah proyek diselesaikan.
           </p>
 
           {/* Guarantees Strip */}
@@ -24,24 +24,24 @@ export const TestimonialPlaceholder: React.FC = () => {
             <div className="flex items-center gap-3 p-3 rounded-2xl bg-surface-container-lowest border border-outline-variant/40">
               <ShieldCheck className="w-5 h-5 text-primary shrink-0" />
               <div>
-                <p className="text-xs font-bold text-on-surface">Quality Commitment</p>
-                <p className="text-[11px] text-secondary">Targeted revisions aligned with the agreed brief</p>
+                <p className="text-xs font-bold text-on-surface">Komitmen Kualitas</p>
+                <p className="text-[11px] text-secondary">Revisi terarah sesuai kesepakatan brief awal</p>
               </div>
             </div>
 
             <div className="flex items-center gap-3 p-3 rounded-2xl bg-surface-container-lowest border border-outline-variant/40">
               <Clock className="w-5 h-5 text-primary shrink-0" />
               <div>
-                <p className="text-xs font-bold text-on-surface">Timely Delivery</p>
-                <p className="text-[11px] text-secondary">Structured milestones completed without delays</p>
+                <p className="text-xs font-bold text-on-surface">Penyelesaian Tepat Waktu</p>
+                <p className="text-[11px] text-secondary">Tahapan kerja terencana tanpa penundaan deadline</p>
               </div>
             </div>
 
             <div className="flex items-center gap-3 p-3 rounded-2xl bg-surface-container-lowest border border-outline-variant/40">
               <FileCheck className="w-5 h-5 text-primary shrink-0" />
               <div>
-                <p className="text-xs font-bold text-on-surface">Full Ownership</p>
-                <p className="text-[11px] text-secondary">Complete commercial rights and source master files</p>
+                <p className="text-xs font-bold text-on-surface">Kepemilikan Penuh</p>
+                <p className="text-[11px] text-secondary">Hak penggunaan komersial dan berkas master lengkap</p>
               </div>
             </div>
           </div>

@@ -1,10 +1,10 @@
 export type ProjectCategory = 
-  | 'All' 
-  | 'Poster & Flyer' 
-  | 'Social Media' 
-  | 'Banner & Promo' 
-  | 'Event Visual' 
-  | 'Branding';
+  | 'Semua' 
+  | 'Poster & Brosur' 
+  | 'Media Sosial' 
+  | 'Banner & Promosi' 
+  | 'Visual Acara' 
+  | 'Identitas Brand';
 
 export interface Project {
   id: string;

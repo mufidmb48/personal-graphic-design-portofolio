@@ -62,7 +62,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
           <button
             onClick={onClose}
             className="p-2 rounded-full text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
-            aria-label="Close project detail"
+            aria-label="Tutup detail proyek"
           >
             <X className="w-5 h-5" />
           </button>
@@ -80,11 +80,11 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
             />
           </div>
 
-          {/* Interactive Artwork Gallery Strip (View all files from this project) */}
+          {/* Interactive Artwork Gallery Strip */}
           {project.supportingRefs && project.supportingRefs.length > 0 && (
             <div className="mb-8 p-4 rounded-2xl bg-surface-container-low border border-outline-variant/50">
               <p className="text-xs font-bold uppercase tracking-wider text-secondary mb-3">
-                Project Gallery & Supporting Files ({1 + project.supportingRefs.length} artworks):
+                Galeri Karya & Berkas Pendukung ({1 + project.supportingRefs.length} karya):
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 {/* Main Cover Thumbnail */}
@@ -95,7 +95,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
                       ? 'border-primary ring-2 ring-primary/20 scale-105 shadow-sm' 
                       : 'border-outline-variant/70 opacity-70 hover:opacity-100 hover:border-primary/50'
                   }`}
-                  title={`Cover: ${project.fileRef}`}
+                  title={`Sampul: ${project.fileRef}`}
                 >
                   <img src={project.image} alt={project.fileRef} className="w-full h-full object-cover" />
                 </button>
@@ -128,11 +128,11 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-primary-container/20 text-primary text-xs font-mono font-bold">
                 <FileCode className="w-3.5 h-3.5" />
-                <span>Source: {project.fileRef}</span>
+                <span>Sumber Berkas: {project.fileRef}</span>
               </span>
               {project.supportingRefs && project.supportingRefs.length > 0 && (
                 <span className="text-xs font-mono text-outline">
-                  (Supporting files: {project.supportingRefs.join(', ')})
+                  (Berkas pendukung: {project.supportingRefs.join(', ')})
                 </span>
               )}
             </div>
@@ -148,28 +148,28 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
               <div className="flex items-center gap-2">
                 <Tag className="w-4 h-4 text-primary shrink-0" />
                 <div>
-                  <p className="text-outline">Project Nature</p>
+                  <p className="text-outline">Jenis Proyek</p>
                   <p className="font-semibold text-on-surface truncate">{project.projectType}</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <User className="w-4 h-4 text-primary shrink-0" />
                 <div>
-                  <p className="text-outline">Client / Context</p>
+                  <p className="text-outline">Klien / Konteks</p>
                   <p className="font-semibold text-on-surface truncate">{project.client}</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-primary shrink-0" />
                 <div>
-                  <p className="text-outline">Year</p>
+                  <p className="text-outline">Tahun Rilis</p>
                   <p className="font-semibold text-on-surface">{project.year}</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <Wrench className="w-4 h-4 text-primary shrink-0" />
                 <div>
-                  <p className="text-outline">Tools Used</p>
+                  <p className="text-outline">Perangkat Lunak</p>
                   <p className="font-semibold text-on-surface truncate">{project.tools.join(', ')}</p>
                 </div>
               </div>
@@ -180,7 +180,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 pt-6 border-t border-outline-variant/50">
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2">
-                Challenge & Objective
+                Tantangan & Sasaran Proyek
               </h3>
               <p className="text-sm text-secondary leading-relaxed">
                 {project.details.objective}
@@ -189,7 +189,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
 
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-primary mb-2">
-                Design Approach & Execution
+                Pendekatan Desain & Eksekusi
               </h3>
               <p className="text-sm text-secondary leading-relaxed">
                 {project.details.approach}
@@ -201,7 +201,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/60">
             <div>
               <h3 className="text-sm font-bold text-on-surface mb-3">
-                Key Deliverables Handed Over
+                Daftar Output Berkas yang Diserahkan
               </h3>
               <ul className="space-y-2 text-xs text-secondary">
                 {project.details.deliverables.map((item, idx) => (
@@ -215,7 +215,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
 
             <div>
               <h3 className="text-sm font-bold text-on-surface mb-3">
-                Deployment & Visual Impact
+                Penerapan & Dampak Visual
               </h3>
               <p className="text-xs text-secondary leading-relaxed">
                 {project.details.outcome}
@@ -226,14 +226,14 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
           {/* CTA Footer in Modal */}
           <div className="pt-6 border-t border-outline-variant/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <p className="text-xs text-secondary">
-              Interested in a similar aesthetic or approach for your project?
+              Tertarik dengan gaya visual atau pendekatan serupa untuk kebutuhan brand Anda?
             </p>
             <div className="flex items-center gap-3">
               <button
                 onClick={onClose}
                 className="px-5 py-2.5 text-xs font-semibold text-secondary hover:bg-surface-container rounded-xl transition-colors cursor-pointer"
               >
-                Close
+                Tutup
               </button>
               <button
                 onClick={() => {
@@ -242,7 +242,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
                 }}
                 className="px-5 py-2.5 text-xs font-semibold text-on-primary bg-primary hover:bg-primary/95 rounded-xl transition-all shadow-sm flex items-center gap-2 cursor-pointer"
               >
-                <span>Discuss Your Project</span>
+                <span>Diskusikan Proyek Anda</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>

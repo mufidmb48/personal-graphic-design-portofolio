@@ -20,17 +20,17 @@ export const Services: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
             <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-primary mb-3">
-              <span>What I Can Do</span>
+              <span>Bidang Keahlian</span>
               <span aria-hidden="true" className="text-outline">·</span>
-              <span>Specialized Services</span>
+              <span>Layanan Spesialis</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-on-surface leading-tight">
-              Purpose-driven visual solutions engineered for real-world impact.
+              Solusi visual terarah yang dirancang untuk dampak komersial nyata.
             </h2>
           </div>
 
           <p className="text-sm sm:text-base text-secondary max-w-md">
-            Every service is tailored to solve specific communication hurdles—from brand identity systems to daily high-turnaround promotional campaign assets.
+            Setiap layanan disesuaikan untuk memecahkan tantangan komunikasi spesifik—mulai dari sistem identitas brand hingga materi promosi dinamis berkecepatan tinggi.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export const Services: React.FC = () => {
 
                   <div className="pt-6 border-t border-outline-variant/50">
                     <p className="text-xs font-semibold tracking-wider uppercase text-on-surface mb-3">
-                      Key Deliverables:
+                      Output Utama (Deliverables):
                     </p>
                     <ul className="space-y-2 text-xs text-secondary">
                       {service.deliverables.map((item) => (
@@ -76,9 +76,9 @@ export const Services: React.FC = () => {
                 </div>
 
                 <div className="mt-8 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs text-outline font-mono">
-                  <span>Service 0{idx + 1}</span>
+                  <span>Layanan 0{idx + 1}</span>
                   <a href="#contact" className="text-primary font-sans font-semibold text-xs group-hover:underline">
-                    Inquire Now →
+                    Konsultasikan Sekarang →
                   </a>
                 </div>
               </div>

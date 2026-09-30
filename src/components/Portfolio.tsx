@@ -8,18 +8,18 @@ interface PortfolioProps {
 }
 
 const categories: ProjectCategory[] = [
-  'All',
-  'Poster & Flyer',
-  'Social Media',
-  'Banner & Promo',
-  'Event Visual',
-  'Branding'
+  'Semua',
+  'Poster & Brosur',
+  'Banner & Promosi',
+  'Identitas Brand',
+  'Visual Acara',
+  'Media Sosial'
 ];
 
 export const Portfolio: React.FC<PortfolioProps> = ({ onSelectProject }) => {
-  const [activeFilter, setActiveFilter] = useState<ProjectCategory>('All');
+  const [activeFilter, setActiveFilter] = useState<ProjectCategory>('Semua');
 
-  const filteredProjects = activeFilter === 'All'
+  const filteredProjects = activeFilter === 'Semua'
     ? projectsData
     : projectsData.filter((p) => p.category === activeFilter);
 
@@ -31,17 +31,17 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onSelectProject }) => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
             <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-primary mb-3">
-              <span>Curated Showcase</span>
+              <span>Galeri Terpilih</span>
               <span aria-hidden="true" className="text-outline">·</span>
-              <span>Selected Work</span>
+              <span>Karya Pilihan</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-on-surface leading-tight">
-              Selected projects from your graphic design portfolio.
+              Koleksi karya desain grafis dan eksplorasi visual terkurasi.
             </h2>
           </div>
 
           <p className="text-sm sm:text-base text-secondary max-w-md">
-            Commercial packaging, branding identities, smartphone tech infographics, and high-energy sports and character posters.
+            Materi promosi komersial, sistem identitas brand kafe, infografis hardware smartphone, serta poster dinamis olahraga dan karakter budaya pop.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onSelectProject }) => {
         {/* Bento & Asymmetric Editorial Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {filteredProjects.map((project, idx) => {
-            const isWide = idx === 0 && activeFilter === 'All';
+            const isWide = idx === 0 && activeFilter === 'Semua';
             const colSpanClass = isWide 
               ? 'md:col-span-8' 
               : idx % 3 === 1 
@@ -91,7 +91,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onSelectProject }) => {
                     onSelectProject(project);
                   }
                 }}
-                aria-label={`View details for ${project.title}`}
+                aria-label={`Lihat detail proyek ${project.title}`}
               >
                 {/* Visual Image container */}
                 <div className="relative overflow-hidden aspect-[16/10] bg-surface-container flex items-center justify-center">
@@ -137,7 +137,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onSelectProject }) => {
                       {project.tools.slice(0, 2).join(' · ')}
                     </div>
                     <span className="font-semibold text-primary group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
-                      View Project Deep-Dive →
+                      Lihat Rincian Proyek →
                     </span>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onSelectProject }) => {
 
         {filteredProjects.length === 0 && (
           <div className="text-center py-16 bg-surface-container-low rounded-3xl border border-outline-variant">
-            <p className="text-secondary text-sm">No projects listed under this category yet.</p>
+            <p className="text-secondary text-sm">Belum ada proyek yang terdaftar dalam kategori ini.</p>
           </div>
         )}
 

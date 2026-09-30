@@ -124,7 +124,7 @@ ${skills.map(s => `• ${s.category}: ${s.items.join(', ')}`).join('\n')}
                 {/* Status indicator */}
                 <div className="absolute bottom-3 right-3 bg-white/95 backdrop-blur-sm border border-outline-variant/60 px-3 py-1 rounded-full shadow-sm flex items-center gap-1.5 text-[11px] font-semibold text-primary">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span>Available</span>
+                  <span>Siap Bekerja Sama</span>
                 </div>
               </div>
 
@@ -133,7 +133,7 @@ ${skills.map(s => `• ${s.category}: ${s.items.join(', ')}`).join('\n')}
                 {personalInfo.fullName}
               </h3>
               <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-3">
-                {personalInfo.degree} · Graphic Designer & PR
+                {personalInfo.degree} · Desainer Grafis & Media Kreatif
               </p>
 
               {/* Quick Contact & Location Meta */}
@@ -542,7 +542,7 @@ ${skills.map(s => `• ${s.category}: ${s.items.join(', ')}`).join('\n')}
                     {personalInfo.fullName}
                   </h2>
                   <p className="text-xs font-semibold text-primary uppercase tracking-wider">
-                    {personalInfo.degree} · Graphic Designer & PR
+                    {personalInfo.degree} · Desainer Grafis & Media Kreatif
                   </p>
                   <p className="text-xs text-secondary mt-1">
                     {personalInfo.location} · {personalInfo.phone} · {personalInfo.email}

@@ -9,15 +9,15 @@ export const Process: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-primary mb-3">
-            <span>Work Methodology</span>
+            <span>Metodologi Kerja</span>
             <span aria-hidden="true" className="text-outline">·</span>
-            <span>How I Work</span>
+            <span>Tahapan Desain</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-on-surface leading-tight">
-            A structured, transparent workflow from initial brief to final delivery.
+            Alur kerja terstruktur dan transparan mulai dari brief awal hingga berkas akhir.
           </h2>
           <p className="text-sm sm:text-base text-secondary mt-3">
-            Zero ambiguity. You always know the active phase, what milestone is being crafted, and what deliverables to expect.
+            Tanpa ketidakpastian. Anda selalu mengetahui tahap apa yang sedang berjalan, target yang sedang dikerjakan, dan berkas apa yang akan Anda terima di setiap fase.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export const Process: React.FC = () => {
 
               <div className="pt-4 border-t border-outline-variant/50">
                 <p className="text-[10px] uppercase font-bold tracking-wider text-outline mb-1">
-                  Phase Output:
+                  Hasil Tahapan:
                 </p>
                 <p className="text-xs font-medium text-on-surface">
                   {step.deliverable}

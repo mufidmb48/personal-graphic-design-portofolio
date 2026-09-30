@@ -18,15 +18,15 @@ export const WhyMe: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-primary mb-3">
-            <span>Value & Commitments</span>
+            <span>Nilai & Komitmen</span>
             <span aria-hidden="true" className="text-outline">·</span>
-            <span>Why Work With Me</span>
+            <span>Mengapa Memilih Saya</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-on-surface leading-tight">
-            Why entrust your graphic design and visual campaigns to me?
+            Mengapa mempercayakan kebutuhan desain grafis Anda kepada saya?
           </h2>
           <p className="text-sm sm:text-base text-secondary mt-3">
-            No empty claims—just reliable standards of creative craftsmanship that protect your brand reputation and commercial investment.
+            Bukan sekadar klaim estetika—melainkan standar kerja profesional yang menjaga reputasi komunikasi brand dan efektivitas promosi Anda.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export const WhyMe: React.FC = () => {
 
                 <div className="pt-5 border-t border-outline-variant/50">
                   <p className="text-[11px] font-semibold text-primary uppercase tracking-wider mb-1">
-                    Direct Benefit for You:
+                    Manfaat Nyata untuk Anda:
                   </p>
                   <p className="text-xs font-medium text-on-surface">
                     {item.benefit}
